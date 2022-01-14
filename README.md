@@ -9,8 +9,24 @@
 ### Развернуть стенд запустив команду. Исполюзуется Ansible role и шаблоны J2.
     vagrant up
 Будет развернут vagrant стенд с двумя машинами. Centos 7.9 server-auth и client с которго будет осуществлятся вход пользователей. \
+В vars заданы переменные которы будут использоваться в шаблонах.
+
+Переменные для доступа /etc/security/time.conf \
+`service: '*' ` \
+`ctty: '*' `\
+`username: 'user1' `\
+`dtime: '!Al0800-2000' ` - Логин пользователя запрещен с 8 утра до 8 вечера.
+
 Зайдем на клиента и попробуем залогинется на сервер.
 
-`ssh user1@192.168.56.218`
+`vagrant ssh client`
+
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-14%2018-05-50.png)
+
+Доступ разрешен. 
+
+Теперь выполним 
+
+`ansible-playbook play.yaml`
+И повторно пробуем залогинется на сервер \
 ![]()
-ansible-playbook play.yaml
