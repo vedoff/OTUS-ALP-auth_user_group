@@ -28,5 +28,9 @@
 Теперь выполним 
 
 `ansible-playbook play.yaml`
-И повторно пробуем залогинется на сервер \
-![]()
+
+И повторно пробуем залогинется на сервер
+
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-14%2020-50-25.png)
+
+Теперь доступ запрещен.
