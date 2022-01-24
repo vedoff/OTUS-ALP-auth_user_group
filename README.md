@@ -34,3 +34,7 @@
 ![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-14%2020-50-25.png)
 
 Теперь доступ запрещен.
+
+## Задание №1 для группы
+
+
