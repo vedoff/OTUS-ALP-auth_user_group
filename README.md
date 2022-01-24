@@ -32,7 +32,7 @@
 
 Теперь выполним 
 
-`ansible-playbook play.yaml`
+`ansible-playbook play-pam-time.yaml`
 
 зайдем на клиента \
 `vagrant ssh client` \
