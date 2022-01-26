@@ -148,7 +148,24 @@ Olive никогда не позволено в доступе. jessica може
 
 ![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2020-28-23.png)
 
-## Возвращаем скрипт в исходное состояние.
+### Возвращаем скрипт в исходное состояние.
 
 # Задание №2
-будем использовать PolKit rules
+Будем использовать PolKit rules \
+Выполним подготовленную роль \
+`ansible-playbook play-pam-service.yml` 
+### Как это работает
+На сервер `server-auth` будет скопировано правило `01-systemd.rules` в директорию `/etc/polkit-1/rules.d`
+
+Данное правило дает право на запуск сервисов systemd для пользователя `user2`
+
+`polkit.addRule(function(action, subject) { ` \
+`if (action.id.match("org.freedesktop.systemd1.manage-units") &&` \
+`subject.user === "user2") {` \
+`return polkit.Result.YES;` \
+`}` \
+`});`
+
+### Демонстрация что это работает
+![]()
+![]()
