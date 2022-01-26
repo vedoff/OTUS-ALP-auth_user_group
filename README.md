@@ -152,7 +152,25 @@ Olive никогда не позволено в доступе. jessica може
 
 # Задание №2
 Будем использовать PolKit rules \
-Выполним подготовленную роль \
+
+### Демонстрация что это работает
+Залогинимся под пользователем `user1` \
+`vagrant ssh server-auth` \
+`ssh user1@192.168.56.218` \
+Пробуем рестартануть сервис `docker` \
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2021-01-21.png)
+
+Разрешение на перезапуск сервиса `docker` отсутствует. \
+
+Логинимся под пользователем `user2` \
+Пробуем рестартануть сервис `docker` \
+Так же рестарт сервиса запрещен \
+Смотрим лог \
+`cat /var/log/secure \
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2014-41-40.png)
+Видим, что доступ на перезапуск сервиса `docker` запрещен для `user2`
+
+## Выполним подготовленную роль 
 `ansible-playbook play-pam-service.yml` 
 ### Как это работает
 На сервер `server-auth` будет скопировано правило `01-systemd.rules` в директорию `/etc/polkit-1/rules.d`
@@ -166,6 +184,8 @@ Olive никогда не позволено в доступе. jessica може
 `}` \
 `});`
 
-### Демонстрация что это работает
-![]()
-![]()
+Повтрим перезапуск сервиса `docker` \
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2021-02-49.png) 
+
+Теперь все работает. Перезапуск сервиса `docker` для пользователя `user2` - Разрешено.
+
