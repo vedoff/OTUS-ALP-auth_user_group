@@ -4,7 +4,11 @@ if [[ `grep $PAM_USER /etc/group | grep 'admin'` ]]
 then
 exit 0
 fi
-if [[ `date +%u` > 5 ]]
+if [[ `grep $PAM_USER /etc/group | grep 'vagrant'` ]]
+then
+exit 0
+fi
+if [[ `date +%u` > 2 ]]
 then
 exit 1
 fi

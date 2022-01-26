@@ -1,5 +1,5 @@
 ## Копирование файла в дерикторию сайта
-- name: Copy file pam_acc.sh
+- name: Copy file pam_script
   copy:
     src: pam_script
     dest: /etc/
