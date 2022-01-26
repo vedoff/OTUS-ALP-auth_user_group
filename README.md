@@ -122,14 +122,14 @@ Olive никогда не позволено в доступе. jessica може
 Пытаемся залогинится на сервер `server-auth` \
 `ssh user1@192.168.56.218` \
 `ssh user2@192.168.56.218` \
-Логин проходит. \
+### Логин проходит 
 ![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2020-11-46.png)
 
-Изменим скрипт:
+## Изменим скрипт:
 ### Было
-![]()
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2020-20-03.png)
 ### Стало
-![]()
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2020-20-22.png)
 
 Выполним повторно \
 `ansible-playbook play-pam-script.yml `
