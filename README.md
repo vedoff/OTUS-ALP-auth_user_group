@@ -141,6 +141,7 @@ Olive никогда не позволено в доступе. jessica може
 `ssh user1@192.168.56.218` 
 ### Логин заблокирован
 `ssh user2@192.168.56.218` 
+
 ![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2020-28-23.png)
 
 ## Возвращаем скрипт в исходное состояние.
