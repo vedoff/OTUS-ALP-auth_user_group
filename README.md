@@ -166,8 +166,9 @@ Olive никогда не позволено в доступе. jessica може
 Пробуем рестартануть сервис `docker` \
 Так же рестарт сервиса запрещен \
 Смотрим лог \
-`cat /var/log/secure \
-![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2014-41-40.png)
+`cat /var/log/secure`
+
+![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2014-41-40.png) \
 Видим, что доступ на перезапуск сервиса `docker` запрещен для `user2`
 
 ## Выполним подготовленную роль 
