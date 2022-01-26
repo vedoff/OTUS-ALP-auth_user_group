@@ -1,0 +1,5 @@
+- name: add user for system
+  user:
+    name: user1
+    password: '$6$Xq4HJ/2bINTtAMEh$2eLhdYUOne7VrLBlXfSvUIylm3BxS.jGIPWlE7wHhzTB9fmMtZt84VyBrSGNNpcpSto0XUe70QFQo44NYFtE01'
+    update_password: always

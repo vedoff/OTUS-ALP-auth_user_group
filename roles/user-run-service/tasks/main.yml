@@ -1,0 +1,9 @@
+---
+# tasks file for user-run-service
+- name: Add script for ssytem
+  copy:
+    src: 
+    dest: /etc/
+    owner: "root"
+    group: "root"
+    mode: '0755'

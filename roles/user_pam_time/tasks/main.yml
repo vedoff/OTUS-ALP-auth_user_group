@@ -11,5 +11,5 @@
   import_tasks: configure_time.yml
 
   ## Подключаем файл создания пользователей
-- name: add user for system
-  import_tasks: add_users.yml
+#- name: add user for system
+#  import_tasks: add_users.yml
