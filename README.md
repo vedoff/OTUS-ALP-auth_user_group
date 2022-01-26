@@ -171,7 +171,7 @@ Olive никогда не позволено в доступе. jessica може
 ![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2014-41-40.png) \
 Видим, что доступ на перезапуск сервиса `docker` запрещен для `user2`
 
-## Выполним подготовленную роль 
+## Выполним 
 `ansible-playbook play-pam-service.yml` 
 ### Как это работает
 На сервер `server-auth` будет скопировано правило `01-systemd.rules` в директорию `/etc/polkit-1/rules.d`
