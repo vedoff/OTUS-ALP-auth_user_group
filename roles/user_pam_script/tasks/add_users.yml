@@ -1,3 +1,4 @@
+# Добавляем узера на сервер пароль только в зашифрованном виде. Шифруем утилитой mkpasswd
 - name: add user for system
   user:
     name: user1

@@ -2,8 +2,8 @@
 # tasks file for user-run-service
 - name: Add script for ssytem
   copy:
-    src: 
-    dest: /etc/
+    src: 01-systemd.rules
+    dest: /etc/polkit-1/rules.d
     owner: "root"
     group: "root"
-    mode: '0755'
+    mode: '0644'

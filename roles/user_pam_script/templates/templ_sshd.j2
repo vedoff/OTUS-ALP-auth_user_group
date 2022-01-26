@@ -1,12 +1,10 @@
 #%PAM-1.0
 auth       substack     password-auth
 auth       include      postlogin
-# Добавлена строка ниже где модуль pam_script.so принемает параметр в виде скрипта
-auth       required     pam_script.so
 # Used with polkit to reauthorize users in remote sessions
 -auth      optional     pam_reauthorize.so prepare
 account    required     pam_nologin.so
-#account    required     pam_time.so
+account    required     pam_script.so
 account    include      password-auth
 password   include      password-auth
 # pam_selinux.so close should be the first session rule

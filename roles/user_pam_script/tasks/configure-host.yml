@@ -1,3 +1,4 @@
+# Устанавливаем пакет pam_script на сервре
 - name: add pkg pam_script
   yum:
     name: pam_script
