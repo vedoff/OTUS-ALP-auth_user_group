@@ -157,7 +157,7 @@ Olive никогда не позволено в доступе. jessica може
 ### Демонстрация что это работает
 Залогинимся под пользователем `user1` \
 `vagrant ssh server-auth` \
-`suso su - user1` \
+`sudo su - user1` \
 Пробуем рестартануть сервис `docker` \
 ![](https://github.com/vedoff/auth_user_group/blob/main/pict/Screenshot%20from%202022-01-26%2021-01-21.png)
 
